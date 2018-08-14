@@ -1,4 +1,38 @@
-.Header {
-  width: 100%;
+@import url('https://fonts.googleapis.com/css?family=Muli:700');
+
+.Header{
   background-color: rgba(0, 0, 0, 0.2)
+}
+
+.Header .content{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.Header .title{
+  font-family: 'Muli', sans-serif;
+  font-size: 32pt;
+  height: 100%;
+}
+
+.Header .items{
+  position: absolute;
+  height: 100%;
+  right: 0;
+  font-size: 16pt;
+  list-style-type: none;
+}
+
+.Header .item{
+  display: inline-block;
+  height: 100%;
+  margin-right: 5px;
+  padding: 1em;
+}
+
+.Header .item:last-child{
+  margin-right: 0;
 }

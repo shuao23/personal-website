@@ -8,7 +8,7 @@ const menuItems = [
   "Resume"
 ];
 
-const MainHeader = ({ title }) => (
+const MainHeader = ({ title }) => ( 
   <Header
     title={title}
     menuItems={menuItems}

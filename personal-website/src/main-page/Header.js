@@ -4,13 +4,17 @@ import './Header.css';
 const Header = ({ title, menuItems }) => {
   return (
     <div className="Header">
-      {title}
-      {
-        menuItems.map((item) => (
-          <div>{item}</div>
-        ))
-      }
-    </div>
+      <div className="content">
+        <div className="title">{title}</div>
+        <ui className="items">
+          {
+            menuItems.map((item) => (
+              <li className="item">{item}</li>
+            ))
+          }
+        </ui>
+      </div>
+    </div >
   );
 }
 
