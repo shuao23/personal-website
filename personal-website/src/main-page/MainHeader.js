@@ -2,15 +2,15 @@ import React from 'react';
 import Header from './Header';
 
 const menuItems = [
-  "About",
-  "Projects",
-  "Blog",
-  "Resume"
+  "ABOUT",
+  "PROJECTS",
+  "BLOG"
 ];
 
-const MainHeader = ({ title }) => ( 
+const MainHeader = ({ title, logo }) => ( 
   <Header
     title={title}
+    logo={logo}
     menuItems={menuItems}
   />
 );
