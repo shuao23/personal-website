@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Header.css';
 import PropTypes from 'prop-types';
+import HeaderTitle from './HeaderTitle';
 
 class Header extends Component {
 
@@ -15,15 +16,17 @@ class Header extends Component {
     return (
       <div className="Header">
         <div className="content">
-          <div className="title">{title}</div>
-          <div className="logo">{logo}</div>
-          <ui className="items">
+          <HeaderTitle
+            title={title}
+            logo={logo}
+          />
+          <ul className="items">
             {
-              menuItems.map((item) => (
-                <li className="item">{item}</li>
+              menuItems.map((item, idx) => (
+                <li className="item" key={idx}>{item}</li>
               ))
             }
-          </ui>
+          </ul>
         </div>
       </div >
     );    

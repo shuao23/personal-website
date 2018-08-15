@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:700');
+
+.HeaderTitle{
+  display: flex;
+  align-items: center;
+}
+
+.HeaderTitle .title{
+  font-family: 'Muli', sans-serif;
+  font-size: 32pt;
+  height: 100%;
+}
+
+@media(min-width: 768px) {
+  .HeaderTitle .title{
+    display: block;
+  }
+
+  .HeaderTitle .logo{
+    display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  .HeaderTitle .title{
+    display: none;
+  }
+
+  .HeaderTitle .logo{
+    display: block;
+  }
+} 

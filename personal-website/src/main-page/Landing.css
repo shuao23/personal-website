@@ -1,7 +1,4 @@
 .Landing{
-  height: 90vh;
-  background-image: url(tokyo-station.jpg); 
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-} 
+  color: white;
+  height: 80vh;
+}
