@@ -1,2 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:700');
 
-  
+.MainPage .Title{
+  font-family: 'Muli', sans-serif;
+  font-size: 32pt;
+  height: 100%;
+}

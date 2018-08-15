@@ -1,10 +1,17 @@
 import React from 'react';
 import Header from './Header';
 
-const menuItems = [
+const menuItemsTop = [
   "ABOUT",
   "PROJECTS",
   "BLOG"
+];
+
+const menuItems = [
+  "ABOUT",
+  "PROJECTS",
+  "BLOG",
+  "RESUME"
 ];
 
 const MainHeader = ({ title, logo }) => ( 
@@ -16,3 +23,11 @@ const MainHeader = ({ title, logo }) => (
 );
 
 export default MainHeader;
+
+export const MainHeaderTop = ({ title, logo }) => (
+  <Header
+    title={title}
+    logo={logo}
+    menuItems={menuItemsTop}
+  />
+);

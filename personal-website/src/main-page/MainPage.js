@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import './MainPage.css';
-import MainHeader from './MainHeader';
-import Logo from './Logo';
+import { MainHeaderTop } from './MainHeader';
 import Landing from './Landing';
 import StaticImageLanding from './StaticImageLanding';
+import SALogo from './SALogo';
+import tokyoStation from './tokyo-station.jpg';
 
 class MainPage extends Component {
 
   render() {
     return (
       <div className="MainPage">
-        <MainHeader title="Shuhei Aoki" logo={<Logo />} />
-        <StaticImageLanding src="./tokyo-station.jpg">
+        <StaticImageLanding src={tokyoStation}>
+          <MainHeaderTop
+            title="Shuhei Aoki"
+            logo={<SALogo />} 
+          />
           <Landing />
         </StaticImageLanding>
       </div>
